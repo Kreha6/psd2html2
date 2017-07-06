@@ -1,0 +1,5 @@
+jasno szary rgb(193,211,210)
+szary ale juz z tym kolorem rgb(131,167,165)
+ten juz ciemny kolor rgb(15,95,92)
+zielony rgb(111,176,72)
+prawie bialy rgb(238,241,236)
