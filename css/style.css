@@ -1,16 +1,51 @@
 .features {
   font-family: 'Roboto', sans-serif; }
-  .features__main__feature__title {
-    color: #0f5f5c;
-    font-weight: 900; }
-  .features__main__feature__detail {
-    color: #83a7a5; }
-  .features__main__feature:nth-child(1) .title {
-    margin-top: 24px; }
-  .features__main__feature:nth-child(2) .title {
-    margin-top: 20px; }
-  .features__main__feature:nth-child(3) .title {
-    margin-top: 28px; }
+  .features__main {
+    margin-top: 4%; }
+    @media only screen and (max-width: 992px) {
+      .features__main__feature {
+        margin-top: 7%; } }
+    .features__main__feature__title {
+      color: #0f5f5c;
+      font-weight: 900;
+      font-size: 17px; }
+    .features__main__feature__detail {
+      color: #83a7a5;
+      padding: 0 5%; }
+      @media only screen and (max-width: 992px) {
+        .features__main__feature__detail {
+          padding: 0 20%; } }
+      @media (max-width: 400px) {
+        .features__main__feature__detail {
+          padding: 0 10%; } }
+    .features__main__feature:nth-child(1) .title {
+      margin-top: 24px; }
+    .features__main__feature:nth-child(2) .title {
+      margin-top: 20px; }
+    .features__main__feature:nth-child(3) .title {
+      margin-top: 28px; }
+  .features__additional {
+    margin-top: 15%;
+    margin-bottom: 10%; }
+    .features__additional__row__feature {
+      padding: 0 30px; }
+      .features__additional__row__feature__img {
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-right: 10px; }
+      .features__additional__row__feature__title {
+        display: inline-block;
+        color: #0f5f5c;
+        font-weight: 900;
+        margin-bottom: 20px; }
+      .features__additional__row__feature__detail {
+        color: #83a7a5; }
+      .features__additional__row__feature:nth-child(1) .title {
+        margin-top: 24px; }
+      .features__additional__row__feature:nth-child(2) .title {
+        margin-top: 20px; }
+      .features__additional__row__feature:nth-child(3) .title {
+        margin-top: 28px; }
 
 .home {
   color: white;
@@ -103,11 +138,16 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     margin-top: 5%;
-    margin-bottom: -1%; }
+    margin-bottom: -1%;
+    padding: 0 3%; }
   .page-title__details {
     color: #83a7a5;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px; }
+    font-size: 15px;
+    padding: 0 20%; }
+    @media (max-width: 400px) {
+      .page-title__details {
+        padding: 0 10%; } }
   .page-title__bar {
     display: inline-block;
     background: #6fb048;
