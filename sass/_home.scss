@@ -1,0 +1,94 @@
+.home {
+  color:white;
+  position:relative;
+  background: no-repeat url("../img/home_bg.png") 50% / 100%;
+  @media(max-width:400px){
+    height: 180px !important;
+    background: no-repeat url("../img/home_bg.png");
+    background-size: cover;
+
+  }
+  @include no-padding;
+  .bg{
+    vertical-align: top;
+    width: 100%;
+    opacity: 0;
+    @media(max-width:400px){
+      height: 180px !important;
+    }
+  }
+  &__details{
+    padding-left:0;
+    padding-right:0;
+    background: $color-green-dark-opacity;
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    @include no-padding;
+    header{
+      @include no-padding;
+      margin-top:25%;
+      @media(max-width:1300px){
+        margin-top:20%;
+      }
+      @media(max-width:800px){
+        margin-top:15%;
+      }
+      @media #{$xs-screen}{
+        text-align: center;
+      }
+      @media(max-width:500px){
+        margin-top:10%;
+      }
+      @media(max-width:400px){
+        margin-top:10%;
+      }
+      @media(max-width:340px){
+        margin-top:5%;
+      }
+    }
+    &__button{
+      border:3px solid $color-green-light;
+      text-transform: uppercase;
+      background-color: $color-green-light;
+      font-weight: 700;
+      width: 150px;
+      height: 40px;
+      margin-top: 3%;
+      margin-bottom: 10%;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      @media(max-width:500px){
+        width: 100px;
+        height: 30px;
+        font-size:10px;
+      }
+      &:hover {
+        background-color: transparent;
+        color: $color-green-light;
+      }
+    }
+    &__text{
+
+      &--head{
+        font-family: 'Roboto', sans-serif;
+        font-size:40px;
+        @media(max-width:800px){
+          font-size:30px;
+        }
+        @media(max-width:700px){
+          font-size:25px;
+        }
+      }
+      &--details{
+        font-family: 'Roboto', sans-serif;
+        font-size:15px;
+        @media(max-width:800px){
+          font-size:12px;
+        }
+      }
+    }
+  }
+}

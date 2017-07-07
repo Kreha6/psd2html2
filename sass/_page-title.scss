@@ -1,0 +1,25 @@
+.page-title{
+  text-align: center;
+  &__head{
+    color:$color-green-dark;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-bottom:-1%;
+  }
+  &__details{
+
+    color:$color-green-grey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  &__bar{
+    display: inline-block;
+    background:$color-green-light;
+    height:2px;
+    width: 125px;
+    margin-bottom:-1%;
+  }
+
+}

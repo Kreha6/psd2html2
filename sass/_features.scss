@@ -1,0 +1,35 @@
+.features{
+  //-webkit-box-sizing: border-box;
+  //-moz-box-sizing: border-box;
+  //box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  &__main{
+    &__feature{
+      &__img{
+
+      }
+      &__title{
+        color:$color-green-dark;
+        font-weight: 900;
+      }
+      &__detail{
+        color:$color-green-grey;
+      }
+      &:nth-child(1){
+        .title{
+          margin-top:24px;
+        }
+      }
+      &:nth-child(2){
+        .title{
+          margin-top:20px;
+        }
+      }
+      &:nth-child(3){
+        .title{
+          margin-top:28px;
+        }
+      }
+    }
+  }
+}
