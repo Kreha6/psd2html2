@@ -2,12 +2,18 @@
   text-align: center;
   &__head{
     color:$color-green-dark;
-    font-size: 40px;
+    font-size: 35px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
     margin-top: 5%;
     margin-bottom:-1%;
     padding:0 3%;
+    @media(max-width:800px){
+      font-size:25px !important;
+    }
+    @media(max-width:700px){
+      font-size:20px !important;
+    }
   }
   &__details{
     color:$color-green-grey;
