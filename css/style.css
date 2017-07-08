@@ -249,6 +249,78 @@
           .template__details__info__sentence {
             font-size: 7px; } }
 
+.testimonial__info {
+  position: relative;
+  padding: 10% 0; }
+  .testimonial__info__text {
+    padding: 10% 3%;
+    font-family: 'Roboto', sans-serif; }
+    .testimonial__info__text--quote {
+      font-size: 22px;
+      color: #83a7a5; }
+    .testimonial__info__text--name {
+      color: #6fb048;
+      font-weight: bold; }
+    .testimonial__info__text--rank {
+      color: #83a7a5;
+      font-weight: bold; }
+    @media only screen and (max-width: 992px) {
+      .testimonial__info__text {
+        margin-top: 3%; } }
+    @media only screen and (max-width: 768px) {
+      .testimonial__info__text {
+        padding: 0 15%; } }
+  .testimonial__info__photo {
+    padding-left: 10%; }
+    @media (max-width: 1050px) {
+      .testimonial__info__photo {
+        padding-left: 5%; } }
+    @media only screen and (max-width: 992px) {
+      .testimonial__info__photo {
+        padding-top: 5%; }
+        .testimonial__info__photo img {
+          width: 300px;
+          height: 300px; } }
+    @media only screen and (max-width: 768px) {
+      .testimonial__info__photo {
+        padding-left: 30%; } }
+    @media (max-width: 720px) {
+      .testimonial__info__photo {
+        padding-left: 28%; } }
+    @media (max-width: 670px) {
+      .testimonial__info__photo {
+        padding-left: 26%; } }
+    @media (max-width: 620px) {
+      .testimonial__info__photo {
+        padding-left: 24%; } }
+    @media (max-width: 570px) {
+      .testimonial__info__photo {
+        padding-left: 20%; } }
+    @media (max-width: 520px) {
+      .testimonial__info__photo {
+        padding-left: 18%; } }
+    @media (max-width: 470px) {
+      .testimonial__info__photo {
+        padding-left: 20%; }
+        .testimonial__info__photo img {
+          width: 250px;
+          height: 250px; } }
+    @media (max-width: 420px) {
+      .testimonial__info__photo {
+        padding-left: 14%; } }
+    @media (max-width: 370px) {
+      .testimonial__info__photo {
+        padding-left: 12%; } }
+    @media (max-width: 350px) {
+      .testimonial__info__photo {
+        padding-left: 8%; } }
+    @media (max-width: 320px) {
+      .testimonial__info__photo {
+        padding-left: 12%; }
+        .testimonial__info__photo img {
+          width: 200px;
+          height: 200px; } }
+
 .page-title {
   text-align: center; }
   .page-title__head {

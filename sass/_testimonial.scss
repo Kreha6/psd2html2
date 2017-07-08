@@ -1,0 +1,88 @@
+.testimonial{
+  &__info{
+    position: relative;
+    padding:10% 0;
+    &__text{
+      padding:10% 3%;
+      font-family: 'Roboto', sans-serif;
+      &--quote{
+        font-size:22px;
+        color: $color-green-grey;
+      }
+      &--name{
+        color: $color-green-light;
+        font-weight: bold;
+      }
+      &--rank{
+        color: $color-green-grey;
+        font-weight: bold;
+      }
+      @media #{$sm-screen}
+      {
+        margin-top:3%;
+      }
+      @media #{$xs-screen}
+      {
+        padding: 0 15%;
+      }
+    }
+    &__photo{
+      padding-left:10%;
+      @media(max-width:1050px){
+        padding-left:5%;
+      }
+      @media #{$sm-screen}
+      {
+        padding-top:5%;
+        img{
+          width:300px;
+          height:300px;
+        }
+      }
+      @media #{$xs-screen}
+      {
+        padding-left: 30%;
+      }
+      @media(max-width:720px){
+        padding-left: 28%;
+      }
+      @media(max-width:670px){
+        padding-left: 26%;
+      }
+      @media(max-width:620px){
+        padding-left: 24%;
+      }
+      @media(max-width:570px){
+        padding-left: 20%;
+      }
+      @media(max-width:520px){
+        padding-left: 18%;
+      }
+      @media(max-width:470px){
+        padding-left: 20%;
+        img{
+          width:250px;
+          height:250px;
+        }
+      }
+      @media(max-width:420px){
+        padding-left: 14%;
+      }
+      @media(max-width:370px){
+        padding-left: 12%;
+      }
+      @media(max-width:350px){
+        padding-left: 8%;
+      }
+      @media(max-width:320px){
+        padding-left: 12%;
+        img{
+          width:200px;
+          height:200px;
+        }
+      }
+
+
+    }
+  }
+}
