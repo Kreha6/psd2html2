@@ -14,6 +14,15 @@
     @media(max-width:700px){
       font-size:20px !important;
     }
+    &.sub{
+      font-size: 25px;
+      @media(max-width:800px){
+        font-size:20px !important;
+      }
+      @media(max-width:700px){
+        font-size:15px !important;
+      }
+    }
   }
   &__details{
     color:$color-green-grey;

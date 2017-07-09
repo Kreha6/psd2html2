@@ -234,6 +234,9 @@
 
 .pricing__plans {
   display: block; }
+  @media (min-width: 768px) {
+    .pricing__plans {
+      margin: 3% 0; } }
   .pricing__plans__plan {
     padding-top: 2%;
     border: 1px solid #c1d3d2; }
@@ -296,6 +299,18 @@
       .pricing__plans__plan:nth-child(3) {
         border-right: none;
         border-left: none; } }
+.pricing__services {
+  margin-top: 5%;
+  margin-bottom: 5%; }
+  @media only screen and (max-width: 768px) {
+    .pricing__services__service {
+      height: 60px; } }
+  .pricing__services__service__img {
+    display: inline-block; }
+  .pricing__services__service__sentence {
+    padding-top: 1%;
+    display: inline-block;
+    color: #83a7a5; }
 
 .template {
   position: relative;
@@ -504,6 +519,14 @@
     @media (max-width: 700px) {
       .page-title__head {
         font-size: 20px !important; } }
+    .page-title__head.sub {
+      font-size: 25px; }
+      @media (max-width: 800px) {
+        .page-title__head.sub {
+          font-size: 20px !important; } }
+      @media (max-width: 700px) {
+        .page-title__head.sub {
+          font-size: 15px !important; } }
   .page-title__details {
     color: #83a7a5;
     font-family: 'Roboto', sans-serif;

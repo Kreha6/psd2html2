@@ -2,8 +2,8 @@
 
   &__plans{
     display: block;
-    @media #{$xs-screen}{
-      //padding-left:10%;
+    @media(min-width:768px){
+      margin:3% 0;
     }
 
     &__plan{
@@ -81,6 +81,23 @@
           border-right:none;
           border-left:none;
         }
+      }
+    }
+  }
+  &__services{
+    margin-top:5%;
+    margin-bottom:5%;
+    &__service{
+      @media #{$xs-screen}{
+        height:60px;
+      }
+      &__img{
+        display:inline-block;
+      }
+      &__sentence{
+        padding-top:1%;
+        display:inline-block;
+        color:$color-green-grey;
       }
     }
   }
