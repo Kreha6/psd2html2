@@ -311,6 +311,39 @@
     padding-top: 1%;
     display: inline-block;
     color: #83a7a5; }
+.pricing__help {
+  font-family: 'Roboto', sans-serif; }
+  .pricing__help__head {
+    color: #6fb048;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: -1%;
+    padding: 0 3%; }
+    @media (max-width: 800px) {
+      .pricing__help__head {
+        font-size: 25px !important; } }
+    @media (max-width: 700px) {
+      .pricing__help__head {
+        font-size: 20px !important; } }
+  .pricing__help__bar {
+    display: inline-block;
+    background: #6fb048;
+    height: 2px;
+    width: 125px;
+    margin-bottom: -1%; }
+  .pricing__help__description {
+    margin-top: 2%;
+    color: #83a7a5;
+    font-size: 15px;
+    padding: 0 10%; }
+    @media (max-width: 400px) {
+      .pricing__help__description {
+        padding: 0 5%; } }
+  .pricing__help__email {
+    margin-top: 2%;
+    font-weight: bold;
+    color: #0f5f5c; }
 
 .template {
   position: relative;

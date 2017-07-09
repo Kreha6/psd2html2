@@ -101,4 +101,42 @@
       }
     }
   }
+  &__help{
+    font-family: 'Roboto', sans-serif;
+    &__head{
+      color:$color-green-light;
+      font-size: 35px;
+      font-weight: 600;
+      margin-top: 5%;
+      margin-bottom:-1%;
+      padding:0 3%;
+      @media(max-width:800px){
+        font-size:25px !important;
+      }
+      @media(max-width:700px){
+        font-size:20px !important;
+      }
+    }
+    &__bar{
+      display: inline-block;
+      background:$color-green-light;
+      height:2px;
+      width: 125px;
+      margin-bottom:-1%;
+    }
+    &__description{
+      margin-top:2%;
+      color:$color-green-grey;
+      font-size: 15px;
+      padding:0 10%;
+      @media(max-width:400px){
+        padding:0 5%;
+      }
+    }
+    &__email{
+      margin-top:2%;
+      font-weight:bold;
+      color:$color-green-dark;
+    }
+  }
 }
