@@ -232,6 +232,71 @@
         .home__details__text--details {
           font-size: 12px; } }
 
+.pricing__plans {
+  display: block; }
+  .pricing__plans__plan {
+    padding-top: 2%;
+    border: 1px solid #c1d3d2; }
+    @media only screen and (max-width: 768px) {
+      .pricing__plans__plan {
+        width: 40%;
+        clear: both;
+        margin-bottom: 3%;
+        margin-left: 30%; } }
+    @media (max-width: 600px) {
+      .pricing__plans__plan {
+        width: 50%;
+        margin-left: 25%; } }
+    @media (max-width: 450px) {
+      .pricing__plans__plan {
+        width: 60%;
+        margin-left: 20%; } }
+    @media (min-width: 768px) {
+      .pricing__plans__plan {
+        width: 28%; } }
+    .pricing__plans__plan__info p {
+      font-family: 'Roboto', sans-serif; }
+    .pricing__plans__plan__info--type {
+      color: #6fb048;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif; }
+    .pricing__plans__plan__info--cost {
+      color: #0f5f5c;
+      font-weight: bold;
+      font-size: 60px; }
+    .pricing__plans__plan__info--month {
+      margin-top: -10%;
+      margin-bottom: 10%;
+      color: #0f5f5c;
+      font-weight: bold; }
+    .pricing__plans__plan__info--content {
+      color: #83a7a5; }
+    .pricing__plans__plan__info__button {
+      color: white;
+      border: 2px solid transparent;
+      text-transform: uppercase;
+      background-color: #c1d3d2;
+      font-weight: 700;
+      width: 150px;
+      height: 40px;
+      margin-top: 3%;
+      margin-bottom: 10%;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out; }
+      .pricing__plans__plan__info__button:hover:not(.active) {
+        background-color: transparent;
+        color: #0f5f5c;
+        border: 2px solid #0f5f5c; }
+      .pricing__plans__plan__info__button.active {
+        background-color: #6fb048; }
+    @media (min-width: 768px) {
+      .pricing__plans__plan:nth-child(3) {
+        border-right: none;
+        border-left: none; } }
+
 .template {
   position: relative;
   background: no-repeat url("../img/template_bg.png") 50%/100%;
@@ -443,10 +508,10 @@
     color: #83a7a5;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    padding: 0 20%; }
+    padding: 0 30%; }
     @media (max-width: 400px) {
       .page-title__details {
-        padding: 0 10%; } }
+        padding: 0 15%; } }
   .page-title__bar {
     display: inline-block;
     background: #6fb048;
@@ -456,3 +521,8 @@
 
 body {
   overflow-x: hidden; }
+
+html, body {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%; }
