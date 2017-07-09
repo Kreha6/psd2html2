@@ -18,7 +18,7 @@
   @media (max-width: 600px) {
     .details {
       height: 582px; } }
-  @media (max-width: 5300px) {
+  @media (max-width: 530px) {
     .details {
       height: 562px; } }
   .details__info {
@@ -73,8 +73,8 @@
         width: 399.84px; } }
     @media only screen and (max-width: 768px) {
       .details__photo img {
-        width: 642.6px;
-        height: 343.8px; } }
+        width: 606.9px;
+        height: 324.7px; } }
     @media (max-width: 700px) {
       .details__photo img {
         width: 571.2px;

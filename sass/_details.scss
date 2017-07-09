@@ -23,7 +23,7 @@ $height:382px;
   @media(max-width:600px){
     height:200px + $height;
   }
-  @media(max-width:5300px){
+  @media(max-width:530px){
     height:180px + $height;
   }
 
@@ -86,8 +86,8 @@ $height:382px;
       }
       @media #{$xs-screen}
       {
-        width: $width*0.9;
-        height: $height*0.9;
+        width: $width*0.85;
+        height: $height*0.85;
       }
       @media(max-width:700px){
         width: $width * 0.8;
