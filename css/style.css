@@ -100,6 +100,54 @@
         width: 285.6px;
         height: 152.8px; } }
 
+.download {
+  margin-top: 5%;
+  color: white;
+  position: relative;
+  background: no-repeat url("../img/call_bg.png") 50%/100%;
+  padding: 0 0 0 0; }
+  .download .bg {
+    vertical-align: top;
+    width: 100%;
+    opacity: 0; }
+  .download__details {
+    padding: 5%;
+    margin: 0;
+    background: rgba(238, 241, 236, 0.9);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    .download__details__text {
+      font-family: 'Roboto', sans-serif; }
+      .download__details__text--head {
+        color: #0f5f5c;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif; }
+        @media (max-width: 800px) {
+          .download__details__text--head {
+            font-size: 25px !important; } }
+        @media (max-width: 700px) {
+          .download__details__text--head {
+            font-size: 20px !important; } }
+      .download__details__text--sub {
+        color: #83a7a5; }
+    .download__details__button button {
+      color: white;
+      border: 2px solid transparent;
+      text-transform: uppercase;
+      background-color: #6fb048;
+      font-weight: 700;
+      width: 250px;
+      height: 40px;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out; }
+      .download__details__button button:hover {
+        background-color: transparent;
+        color: #0f5f5c;
+        border: 2px solid #0f5f5c; }
+
 .features {
   font-family: 'Roboto', sans-serif; }
   .features__main {

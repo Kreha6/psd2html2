@@ -1,0 +1,60 @@
+.download {
+
+  margin-top:5%;
+  color:white;
+  position:relative;
+  background: no-repeat url("../img/call_bg.png") 50% / 100%;
+  @include no-padding;
+  .bg{
+    vertical-align: top;
+    width: 100%;
+    opacity: 0;
+  }
+  &__details{
+    padding:5%;
+    margin:0;
+    background: $color-white-opacity;
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    &__text{
+      font-family: 'Roboto', sans-serif;
+      &--head{
+        color:$color-green-dark;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        @media(max-width:800px){
+          font-size:25px !important;
+        }
+        @media(max-width:700px){
+          font-size:20px !important;
+        }
+      }
+      &--sub{
+        color:$color-green-grey;
+
+      }
+    }
+    &__button{
+      button{
+        color:white;
+        border:2px solid transparent;
+        text-transform:uppercase;
+        background-color: $color-green-light;
+        font-weight: 700;
+        width: 250px;
+        height: 40px;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        &:hover {
+          background-color: transparent;
+          color:$color-green-dark;
+          border:2px solid $color-green-dark;
+        }
+
+      }
+    }
+  }
+}
