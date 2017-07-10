@@ -19,17 +19,16 @@ $(document).ready(function(){
             var topEl = $(a.attr('href')).offset().top;
             console.log(topEl);
             var bottomEl = $(a.attr('href')).offset().top + $(a.attr('href')).height();
+            var botWin = top+winHeight ;
             var winHeight = $( window ).height();
-            if(((top+winHeight - (50))<bottomEl) && ((top+winHeight - (50))>topEl)){
-
-                $anchor.addClass('current');
-                set = true;
-            }
-            else{
-                if(!set){
+            if(!set){
+                if(((botWin-100)<bottomEl) && (botWin>topEl)){
                     $(".current").removeClass('current');
+                    $anchor.addClass('current');
+                    set = true;
                 }
             }
+
             if(top<100){
                 $(".current").removeClass('current');
                 $("li:nth-child(1)").addClass('current');
