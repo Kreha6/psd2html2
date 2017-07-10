@@ -244,6 +244,52 @@
       .features__additional__row__feature:nth-child(3) .title {
         margin-top: 28px; }
 
+.footer {
+  padding-top: 3%;
+  padding-bottom: 3%; }
+  .footer p {
+    color: #83a7a5; }
+  .footer__details--contact {
+    margin-top: -0.5%; }
+    .footer__details--contact .name {
+      color: #0f5f5c;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 900; }
+    .footer__details--contact .mail span {
+      color: #0f5f5c;
+      font-weight: 600; }
+  .footer__details--company .name, .footer__details--others .name, .footer__details--newsletter .name {
+    color: #0f5f5c;
+    font-weight: 600; }
+  .footer__details--newsletter .input-group input, .footer__details--newsletter .input-group span {
+    box-shadow: none;
+    border: none;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 4px solid transparent;
+    background-color: #eef1ec; }
+    .footer__details--newsletter .input-group input:focus, .footer__details--newsletter .input-group span:focus {
+      border-left: 4px solid #0f5f5c;
+      box-shadow: none; }
+  @media only screen and (max-width: 768px) {
+    .footer__details--newsletter .input-group {
+      width: 50%;
+      margin: auto; } }
+  @media (max-width: 700px) {
+    .footer__details--newsletter .input-group {
+      width: 70%; } }
+  @media only screen and (max-width: 992px) {
+    .footer .section {
+      margin-top: 3%; } }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      text-align: center; } }
+
 .home {
   color: white;
   position: relative;

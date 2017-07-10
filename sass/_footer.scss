@@ -1,0 +1,68 @@
+.footer{
+  p{
+    color:$color-green-grey;
+  }
+
+  padding-top:3%;
+  padding-bottom:3%;
+  &__details{
+    &--contact{
+      margin-top:-0.5%;
+      .name{
+        color:$color-green-dark;
+        text-transform: uppercase;
+        font-size:24px;
+        font-weight:900;
+      }
+      .mail{
+        span{
+          color:$color-green-dark;
+          font-weight:600;
+        }
+      }
+
+    }
+    &--company,&--others,&--newsletter{
+      .name{
+        color:$color-green-dark;
+        font-weight:600;
+      }
+
+    }
+    &--newsletter{
+      .input-group{
+        input,span{
+          box-shadow: none;
+          border:none;
+          -webkit-border-bottom-left-radius:5px;
+          -moz-border-bottom-left-radius:5px;
+          border-bottom-left-radius:5px;
+          -webkit-border-bottom-right-radius:5px;
+          -moz-border-bottom-right-radius:5px;
+          border-bottom-right-radius:5px;
+          border-left: 4px solid transparent;
+          background-color: $color-white;
+          &:focus{
+            border-left: 4px solid $color-green-dark;
+            box-shadow: none;
+          }
+        }
+        @media #{$xs-screen}{
+          width: 50%;
+          margin: auto;
+        }
+        @media(max-width:700px){
+          width: 70%;
+        }
+      }
+    }
+  }
+  .section{
+    @media #{$sm-screen}{
+      margin-top:3%;
+    }
+  }
+  @media #{$xs-screen}{
+    text-align: center;
+  }
+}
