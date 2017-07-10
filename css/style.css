@@ -692,7 +692,7 @@
   .menu li {
     display: inline-block;
     list-style: outside none none;
-    margin: 0.5em 1em;
+    margin: 0.5em 0;
     overflow: hidden;
     position: relative;
     border-radius: 3px; }
@@ -766,6 +766,26 @@
   .menu li:hover .page-scroll:after, .menu li.current .page-scroll:after {
     -webkit-transition-delay: 0.225s;
     transition-delay: 0.225s; }
+
+.logo {
+  z-index: 10001;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  color: white; }
+  .logo__logo {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900; }
+  .logo__phone {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    display: inline-block; }
+  .logo__number {
+    position: relative;
+    display: inline-block;
+    top: -3px; }
 
 body {
   overflow-x: hidden; }
