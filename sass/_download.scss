@@ -9,9 +9,19 @@
     vertical-align: top;
     width: 100%;
     opacity: 0;
+    @media(max-width:880px){
+      height:120px;
+    }
+    @media(max-width:580px){
+      height:140px;
+    }
+    @media(max-width:390px){
+      height:160px;
+    }
   }
   &__details{
-    padding:5%;
+    padding-top:4%;
+
     margin:0;
     background: $color-white-opacity;
     position: absolute;
@@ -19,12 +29,13 @@
     width:100%;
     height:100%;
     &__text{
+      padding-left:10%;
       font-family: 'Roboto', sans-serif;
       &--head{
         color:$color-green-dark;
         font-size: 30px;
         font-family: 'Roboto', sans-serif;
-        @media(max-width:800px){
+        @media(max-width:1250px){
           font-size:25px !important;
         }
         @media(max-width:700px){
@@ -32,17 +43,31 @@
         }
       }
       &--sub{
+        margin-top:-2%;
         color:$color-green-grey;
 
+      }
+      @media(max-width:1250px){
+        padding-top:2%;
+      }
+      @media(max-width:1100px){
+        padding-top:0%;
+      }
+      @media #{$sm-screen}{
+        text-align: center;
+        padding-left:2%;
+        padding-right:2%;
       }
     }
     &__button{
       button{
+        margin-top:3%;
+        font-size:12px;
         color:white;
         border:2px solid transparent;
         text-transform:uppercase;
         background-color: $color-green-light;
-        font-weight: 700;
+        font-weight: 600;
         width: 250px;
         height: 40px;
         -webkit-transition: all .5s ease-in-out;
@@ -53,8 +78,31 @@
           color:$color-green-dark;
           border:2px solid $color-green-dark;
         }
-
+        @media(max-width:1250px){
+          margin-top:5%;
+        }
+        @media #{$sm-screen}{
+          margin-top:0;
+        }
       }
     }
+    @media(max-width:1350px){
+      padding-top:3%;
+    }
+    @media(max-width:1250px){
+      padding-top:1%;
+    }
+
+  }
+  @media(max-width:880px){
+    height: 120px;
+    background: no-repeat url("../img/call_bg.png");
+    background-size: cover;
+  }
+  @media(max-width:580px){
+    height: 140px;
+  }
+  @media(max-width:390px){
+    height:160px;
   }
 }
