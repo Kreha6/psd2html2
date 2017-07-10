@@ -455,7 +455,9 @@
         left: 100px; } }
     @media (max-width: 1050px) {
       .template .phone {
-        left: 50px;
+        left: 50px; } }
+    @media (max-width: 960px) {
+      .template .phone {
         width: 338.91px;
         height: 391.84px; } }
     @media only screen and (max-width: 768px) {
@@ -471,9 +473,9 @@
         left: 0;
         width: 300.3px;
         height: 347.2px; } }
-  @media (max-width: 1050px) {
+  @media (max-width: 960px) {
     .template {
-      height: 600px; } }
+      height: 640px; } }
   @media only screen and (max-width: 768px) {
     .template {
       height: 900px; } }
@@ -491,7 +493,7 @@
     height: 100%; }
     .template__details__info {
       padding-right: 10%;
-      margin-top: 8%; }
+      margin-top: 5%; }
       .template__details__info__title {
         font-size: 25px;
         font-weight: 900;

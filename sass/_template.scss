@@ -11,6 +11,10 @@ $handH: 496px;
     }
     @media(max-width:1050px){
       left:50px;
+      //width: $handW * 0.79;
+      //height: $handH * 0.79;
+    }
+    @media(max-width:960px){
       width: $handW * 0.79;
       height: $handH * 0.79;
     }
@@ -32,8 +36,11 @@ $handH: 496px;
   background: $color-white;
   height:700px;
   @include no-padding;
-  @media(max-width:1050px){
-    height:600px;
+  //@media(max-width:1050px){
+  //  height:600px;
+  //}
+  @media(max-width:960px){
+    height:640px;
   }
   @media #{$xs-screen}{
     height:900px;
@@ -52,7 +59,7 @@ $handH: 496px;
     height:100%;
     &__info{
       padding-right:10%;
-      margin-top:8%;
+      margin-top:5%;
       &__title{
         font-size:25px;
         font-weight:900;
