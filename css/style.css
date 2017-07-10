@@ -680,6 +680,7 @@
     height: 60px; }
 
 .menu {
+  margin-top: 5px;
   font-family: 'Roboto', Arial, sans-serif;
   text-align: right;
   text-transform: uppercase;

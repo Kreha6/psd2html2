@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    /* ======================================================= *
+     ...........................NAVBAR...........................
+     ==========================================================*/
+
     $(window).scroll(function() {
         var $header = $(".header");
         if ($header.offset().top > 50) {
@@ -6,7 +11,7 @@ $(document).ready(function(){
         } else {
             $header.removeClass("scrolled");
         }
-
+        var set = false;
         var top = $header.offset().top;
         for(var i = 1;i<6;i++){
             var $anchor = $("li:nth-child(" + i +")");
@@ -14,20 +19,35 @@ $(document).ready(function(){
             var topEl = $(a.attr('href')).offset().top;
             console.log(topEl);
             var bottomEl = $(a.attr('href')).offset().top + $(a.attr('href')).height();
-            $anchor.removeClass('current');
-            if(((top+300)>topEl) && ((top+150)<bottomEl)){
+            var winHeight = $( window ).height();
+            if(((top+winHeight - (50))<bottomEl) && ((top+winHeight - (50))>topEl)){
+
                 $anchor.addClass('current');
+                set = true;
+            }
+            else{
+                if(!set){
+                    $(".current").removeClass('current');
+                }
+            }
+            if(top<100){
+                $(".current").removeClass('current');
+                $("li:nth-child(1)").addClass('current');
             }
         }
     });
 
     $(document).on('click', 'a.page-scroll', function(event) {
+
         var $anchor = $(this);
         var top = $($anchor.attr('href')).offset().top;
         $('html, body').stop().animate({
             scrollTop: top-70,
         }, 1500);
         event.preventDefault();
+        $(".current").removeClass('current');
+        $anchor.addClass('current');
+
 
     });
 
