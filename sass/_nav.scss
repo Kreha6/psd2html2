@@ -134,14 +134,12 @@
 
 .logo{
   cursor: pointer;
-  opacity:0;
+  display:none;
   z-index: 10001;
   position:fixed;
   top:10px;
   left:20px;
   color:white;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
   &__logo{
     display:inline-block;
     text-transform: uppercase;
@@ -158,8 +156,5 @@
     display:inline-block;
     top:-3px;
 
-  }
-  &.scrolled{
-    opacity:1;
   }
 }

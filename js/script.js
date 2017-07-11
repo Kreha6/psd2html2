@@ -26,7 +26,7 @@ $(document).ready(function(){
         var $logo = $(".logo");
         if ($header.offset().top > 50) {
             $header.addClass("scrolled");
-            $logo.addClass("scrolled");
+            $logo.fadeIn(1000);
             if($(window).width()<340){
                 $( ".logo__phone,.logo__number" ).css("display", "none");
             }
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
         } else {
             $header.removeClass("scrolled");
-            $logo.removeClass("scrolled");
+            $logo.fadeOut(1000);
         }
         var set = false;
         var top = $header.offset().top;
@@ -44,7 +44,6 @@ $(document).ready(function(){
             var $anchor = $("li:nth-child(" + i +")");
             var a = $anchor.children( ".page-scroll");
             var topEl = $(a.attr('href')).offset().top;
-            console.log(topEl);
             var bottomEl = $(a.attr('href')).offset().top + $(a.attr('href')).height();
             var botWin = top+winHeight ;
             var winHeight = $( window ).height();
