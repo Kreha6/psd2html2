@@ -27,6 +27,12 @@ $(document).ready(function(){
         if ($header.offset().top > 50) {
             $header.addClass("scrolled");
             $logo.addClass("scrolled");
+            if($(window).width()<340){
+                $( ".logo__phone,.logo__number" ).css("display", "none");
+            }
+            else{
+                $( ".logo__phone,.logo__number" ).css("display", "inline-block");
+            }
 
         } else {
             $header.removeClass("scrolled");
