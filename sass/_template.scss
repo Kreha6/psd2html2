@@ -59,6 +59,11 @@ $handH: 496px;
     height:100%;
     &__info{
       padding-right:10%;
+      @media #{$xs-screen}
+      {
+        padding-right:5%;
+        padding-left:5%;
+      }
       margin-top:5%;
       &__title{
         font-size:25px;
@@ -77,8 +82,10 @@ $handH: 496px;
         color:$color-green-grey;
       }
     }
-    @media #{$xs-screen}{
-      padding-left:10%;
+    @media #{$xs-screen}
+    {
+
+      text-align: center;
     }
   }
 }

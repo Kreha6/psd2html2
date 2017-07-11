@@ -11,7 +11,8 @@
       height: 420.2px; } }
   @media only screen and (max-width: 768px) {
     .details {
-      height: 682px; } }
+      height: 682px;
+      text-align: center; } }
   @media (max-width: 700px) {
     .details {
       height: 632px; } }
@@ -534,6 +535,10 @@
     .template__details__info {
       padding-right: 10%;
       margin-top: 5%; }
+      @media only screen and (max-width: 768px) {
+        .template__details__info {
+          padding-right: 5%;
+          padding-left: 5%; } }
       .template__details__info__title {
         font-size: 25px;
         font-weight: 900;
@@ -548,7 +553,7 @@
         color: #83a7a5; }
     @media only screen and (max-width: 768px) {
       .template__details {
-        padding-left: 10%; } }
+        text-align: center; } }
 
 .testimonial__info {
   position: relative;
