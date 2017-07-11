@@ -53,4 +53,16 @@ $(document).ready(function(){
 
     });
 
+    /* ======================================================= *
+     ...........................PRICING...........................
+     ==========================================================*/
+
+    $(document).on('click', '.pricing__plans__plan__info__button:not(.active)', function(event) {
+        $('.pricing__plans__plan__info__button.active').removeClass('active');
+        $(this).addClass('active');
+
+
+    });
+
+
 });
