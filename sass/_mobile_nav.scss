@@ -1,4 +1,4 @@
-.mobile-nav{
+.header{
   * {
     box-sizing: border-box;
   }
@@ -20,7 +20,7 @@
 
   .outer-menu {
     position: fixed;
-    top: 10vh;
+    top: 0;
     right: 0;
     z-index: 1;
     .checkbox-toggle {
@@ -73,7 +73,7 @@
       width: 60px;
       height: 60px;
       padding: .5em 1em;
-      background: $color-green-dark-opacity;
+      background: transparent;
       border-radius: 0 0.12em 0.12em 0;
       cursor: pointer;
       transition: box-shadow 0.4s ease;

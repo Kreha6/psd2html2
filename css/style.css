@@ -679,7 +679,7 @@
     background: rgba(15, 95, 92, 0.9);
     height: 60px; }
 
-.menu {
+.menu-lg {
   margin-top: 5px;
   font-family: 'Roboto', Arial, sans-serif;
   text-align: right;
@@ -687,22 +687,22 @@
   font-weight: 500;
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
-  .menu * {
+  .menu-lg * {
     box-sizing: border-box; }
-  .menu li {
+  .menu-lg li {
     display: inline-block;
     list-style: outside none none;
     margin: 0.5em 0;
     overflow: hidden;
     position: relative;
     border-radius: 3px; }
-    .menu li:before, .menu li:after {
+    .menu-lg li:before, .menu-lg li:after {
       display: block; }
-    .menu li:before {
+    .menu-lg li:before {
       left: 0%; }
-    .menu li:after {
+    .menu-lg li:after {
       left: 50%; }
-  .menu .page-scroll {
+  .menu-lg .page-scroll {
     backface-visibility: hidden;
     color: #e6e6e6;
     display: block;
@@ -710,13 +710,13 @@
     position: relative;
     text-align: center;
     text-decoration: none; }
-    .menu .page-scroll:hover {
+    .menu-lg .page-scroll:hover {
       color: #ffffff; }
-    .menu .page-scroll:before {
+    .menu-lg .page-scroll:before {
       left: 25%; }
-    .menu .page-scroll:after {
+    .menu-lg .page-scroll:after {
       left: 75%; }
-  .menu li:before, .menu li:after {
+  .menu-lg li:before, .menu-lg li:after {
     background-color: #6fb048;
     position: absolute;
     width: 26%;
@@ -727,7 +727,7 @@
     opacity: 0;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
-  .menu .page-scroll:before, .menu .page-scroll:after {
+  .menu-lg .page-scroll:before, .menu-lg .page-scroll:after {
     background-color: #6fb048;
     position: absolute;
     width: 26%;
@@ -738,32 +738,32 @@
     opacity: 0;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
-  .menu li:before {
+  .menu-lg li:before {
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
-  .menu li:after {
+  .menu-lg li:after {
     -webkit-transition-delay: 0.1s;
     transition-delay: 0.1s; }
-  .menu .page-scroll:before {
+  .menu-lg .page-scroll:before {
     -webkit-transition-delay: 0.05s;
     transition-delay: 0.05s; }
-  .menu .page-scroll:after {
+  .menu-lg .page-scroll:after {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s; }
-  .menu li:hover:before, .menu li.current:before, .menu li:hover:after, .menu li.current:after, .menu li:hover a:before, .menu li.current a:before, .menu li:hover a:after, .menu li.current a:after {
+  .menu-lg li:hover:before, .menu-lg li.current:before, .menu-lg li:hover:after, .menu-lg li.current:after, .menu-lg li:hover a:before, .menu-lg li.current a:before, .menu-lg li:hover a:after, .menu-lg li.current a:after {
     opacity: 1;
     top: 0;
     bottom: 0; }
-  .menu li:hover:before, .menu li.current:before {
+  .menu-lg li:hover:before, .menu-lg li.current:before {
     -webkit-transition-delay: 0s;
     transition-delay: 0s; }
-  .menu li:hover:after, .menu li.current:after {
+  .menu-lg li:hover:after, .menu-lg li.current:after {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s; }
-  .menu li:hover .page-scroll:before, .menu li.current .page-scroll:before {
+  .menu-lg li:hover .page-scroll:before, .menu-lg li.current .page-scroll:before {
     -webkit-transition-delay: 0.075s;
     transition-delay: 0.075s; }
-  .menu li:hover .page-scroll:after, .menu li.current .page-scroll:after {
+  .menu-lg li:hover .page-scroll:after, .menu-lg li.current .page-scroll:after {
     -webkit-transition-delay: 0.225s;
     transition-delay: 0.225s; }
 
@@ -787,25 +787,25 @@
     display: inline-block;
     top: -3px; }
 
-.mobile-nav * {
+.header * {
   box-sizing: border-box; }
-.mobile-nav a {
+.header a {
   color: inherit;
   text-decoration: none; }
-  .mobile-nav a:visited, .mobile-nav a:hover, .mobile-nav a:active {
+  .header a:visited, .header a:hover, .header a:active {
     color: inherit;
     text-decoration: none; }
-.mobile-nav h1 {
+.header h1 {
   font-family: 'Pacifico', cursive;
   font-weight: 400;
   font-size: 3em;
   text-align: center; }
-.mobile-nav .outer-menu {
+.header .outer-menu {
   position: fixed;
-  top: 10vh;
+  top: 0;
   right: 0;
   z-index: 1; }
-  .mobile-nav .outer-menu .checkbox-toggle {
+  .header .outer-menu .checkbox-toggle {
     position: absolute;
     top: 0;
     right: 0;
@@ -814,29 +814,29 @@
     width: 60px;
     height: 60px;
     opacity: 0; }
-    .mobile-nav .outer-menu .checkbox-toggle:checked + .hamburger > div {
+    .header .outer-menu .checkbox-toggle:checked + .hamburger > div {
       transform: rotate(135deg); }
-      .mobile-nav .outer-menu .checkbox-toggle:checked + .hamburger > div:before {
+      .header .outer-menu .checkbox-toggle:checked + .hamburger > div:before {
         top: 0;
         transform: rotate(90deg); }
-      .mobile-nav .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+      .header .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
         top: 0;
         transform: rotate(90deg);
         opacity: 0; }
-    .mobile-nav .outer-menu .checkbox-toggle:checked ~ .menu {
+    .header .outer-menu .checkbox-toggle:checked ~ .menu {
       pointer-events: auto;
       visibility: visible; }
-      .mobile-nav .outer-menu .checkbox-toggle:checked ~ .menu > div {
+      .header .outer-menu .checkbox-toggle:checked ~ .menu > div {
         transform: scale(1);
         transition-duration: .75s; }
-        .mobile-nav .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+        .header .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
           opacity: 1;
           transition: opacity 0.4s ease 0.4s; }
-    .mobile-nav .outer-menu .checkbox-toggle:hover + .hamburger {
+    .header .outer-menu .checkbox-toggle:hover + .hamburger {
       box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
-    .mobile-nav .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+    .header .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
       transform: rotate(225deg); }
-  .mobile-nav .outer-menu .hamburger {
+  .header .outer-menu .hamburger {
     position: absolute;
     top: 0;
     right: 0;
@@ -844,7 +844,7 @@
     width: 60px;
     height: 60px;
     padding: .5em 1em;
-    background: rgba(15, 95, 92, 0.9);
+    background: transparent;
     border-radius: 0 0.12em 0.12em 0;
     cursor: pointer;
     transition: box-shadow 0.4s ease;
@@ -852,7 +852,7 @@
     display: flex;
     align-items: center;
     justify-content: center; }
-    .mobile-nav .outer-menu .hamburger > div {
+    .header .outer-menu .hamburger > div {
       position: relative;
       flex: none;
       width: 100%;
@@ -862,7 +862,7 @@
       display: flex;
       align-items: center;
       justify-content: center; }
-      .mobile-nav .outer-menu .hamburger > div:before {
+      .header .outer-menu .hamburger > div:before {
         content: '';
         position: absolute;
         z-index: 1;
@@ -872,7 +872,7 @@
         height: 2px;
         background: inherit;
         transition: all 0.4s ease; }
-      .mobile-nav .outer-menu .hamburger > div:after {
+      .header .outer-menu .hamburger > div:after {
         content: '';
         position: absolute;
         z-index: 1;
@@ -882,7 +882,7 @@
         background: inherit;
         transition: all 0.4s ease;
         top: 10px; }
-  .mobile-nav .outer-menu .menu {
+  .header .outer-menu .menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -896,7 +896,7 @@
     display: flex;
     align-items: center;
     justify-content: center; }
-    .mobile-nav .outer-menu .menu > div {
+    .header .outer-menu .menu > div {
       width: 200vw;
       height: 200vw;
       color: #FEFEFE;
@@ -910,7 +910,7 @@
       display: flex;
       align-items: center;
       justify-content: center; }
-      .mobile-nav .outer-menu .menu > div > div {
+      .header .outer-menu .menu > div > div {
         text-align: center;
         max-width: 90vw;
         max-height: 100vh;
@@ -921,27 +921,27 @@
         display: flex;
         align-items: center;
         justify-content: center; }
-        .mobile-nav .outer-menu .menu > div > div > ul {
+        .header .outer-menu .menu > div > div > ul {
           list-style: none;
           padding: 0 1em;
           margin: 0;
           display: block;
           max-height: 100vh; }
-          .mobile-nav .outer-menu .menu > div > div > ul > li {
+          .header .outer-menu .menu > div > div > ul > li {
             padding: 0;
             margin: 1em;
             font-size: 24px;
             display: block; }
-            .mobile-nav .outer-menu .menu > div > div > ul > li > a {
+            .header .outer-menu .menu > div > div > ul > li > a {
               position: relative;
               display: inline;
               cursor: pointer;
               transition: color 0.4s ease; }
-              .mobile-nav .outer-menu .menu > div > div > ul > li > a:hover {
+              .header .outer-menu .menu > div > div > ul > li > a:hover {
                 color: #e5e5e5; }
-                .mobile-nav .outer-menu .menu > div > div > ul > li > a:hover:after {
+                .header .outer-menu .menu > div > div > ul > li > a:hover:after {
                   width: 100%; }
-              .mobile-nav .outer-menu .menu > div > div > ul > li > a:after {
+              .header .outer-menu .menu > div > div > ul > li > a:after {
                 content: '';
                 position: absolute;
                 z-index: 1;

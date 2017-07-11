@@ -46,6 +46,9 @@ $(document).ready(function(){
         event.preventDefault();
         $(".current").removeClass('current');
         $anchor.addClass('current');
+        if($(window).width()<768){
+            $( ".checkbox-toggle" ).trigger( "click" );
+        }
 
 
     });
