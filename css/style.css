@@ -103,24 +103,16 @@
 .download {
   margin-top: 5%;
   color: white;
-  position: relative;
-  background: no-repeat url("../img/call_bg.png") 50%/100%;
+  background-image: url("../img/call_bg.png");
+  height: 200px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: auto;
   padding: 0 0 0 0; }
-  .download .bg {
-    vertical-align: top;
-    width: 100%;
-    opacity: 0; }
-    @media (max-width: 880px) {
-      .download .bg {
-        height: 120px; } }
-    @media (max-width: 580px) {
-      .download .bg {
-        height: 140px; } }
-    @media (max-width: 390px) {
-      .download .bg {
-        height: 160px; } }
+  @media (max-width: 350px) {
+    .download {
+      height: 220px; } }
   .download__details {
-    padding-top: 4%;
     margin: 0;
     background: rgba(238, 241, 236, 0.9);
     position: absolute;
@@ -143,12 +135,6 @@
       .download__details__text--sub {
         margin-top: -2%;
         color: #83a7a5; }
-      @media (max-width: 1250px) {
-        .download__details__text {
-          padding-top: 2%; } }
-      @media (max-width: 1100px) {
-        .download__details__text {
-          padding-top: 0%; } }
       @media only screen and (max-width: 992px) {
         .download__details__text {
           text-align: center;
@@ -171,29 +157,16 @@
         background-color: transparent;
         color: #0f5f5c;
         border: 2px solid #0f5f5c; }
-      @media (max-width: 1250px) {
-        .download__details__button button {
-          margin-top: 5%; } }
-      @media only screen and (max-width: 992px) {
-        .download__details__button button {
-          margin-top: 0; } }
-    @media (max-width: 1350px) {
+    @media (max-width: 340px) {
+      .download__details__button {
+        padding-right: 0;
+        padding-left: 0; } }
+    @media (max-width: 1650px) {
       .download__details {
-        padding-top: 3%; } }
+        padding-top: 4%; } }
     @media (max-width: 1250px) {
       .download__details {
-        padding-top: 1%; } }
-  @media (max-width: 880px) {
-    .download {
-      height: 120px;
-      background: no-repeat url("../img/call_bg.png");
-      background-size: cover; } }
-  @media (max-width: 580px) {
-    .download {
-      height: 140px; } }
-  @media (max-width: 390px) {
-    .download {
-      height: 160px; } }
+        padding-top: 6%; } }
 
 .features {
   font-family: 'Roboto', sans-serif; }
