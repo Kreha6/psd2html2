@@ -1,26 +1,49 @@
 .home {
   color:white;
-  position:relative;
-  background: no-repeat url("../img/home_bg.png") 50% / 100%;
-  @media(max-width:400px){
-    height: 180px !important;
-    background: no-repeat url("../img/home_bg.png");
-    background-size: cover;
-
+  background-image: url("../img/home_bg.png");
+  height: 660px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: auto;
+  @media(max-width:1100px){
+    height: 520px;
+  }
+  @media(max-width:850px){
+    height: 440px;
+  }
+  @media(max-width:700px){
+    height: 320px;
+  }
+  @media(max-width:500px){
+    height: 220px;
   }
   @include no-padding;
-  .bg{
-    vertical-align: top;
-    width: 100%;
-    opacity: 0;
-    @media(max-width:400px){
-      height: 180px !important;
+  &:after{
+    z-index:900;
+    position:absolute;
+    height:100%;
+    width:100%;
+    max-height: 660px;
+    top:0;
+    left:0;
+    background-color: $color-green-dark-opacity;
+    @media(max-width:1100px){
+      max-height: 520px;
+    }
+    @media(max-width:850px){
+      max-height: 440px;
+    }
+    @media(max-width:700px){
+      max-height: 320px;
+    }
+    @media(max-width:500px){
+      max-height: 220px;
     }
   }
   &__details{
+    z-index: 1000;
     padding-left:0;
     padding-right:0;
-    background: $color-green-dark-opacity;
     position: absolute;
     top: 0;
     width:100%;
@@ -41,11 +64,8 @@
       @media(max-width:500px){
         margin-top:10%;
       }
-      @media(max-width:400px){
-        margin-top:10%;
-      }
       @media(max-width:340px){
-        margin-top:5%;
+        margin-top:15%;
       }
     }
     &__button{

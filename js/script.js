@@ -1,15 +1,36 @@
 $(document).ready(function(){
+    /* ======================================================= *
+     ...........................SLIDE IN...........................
+     ==========================================================*/
+    $.fn.visible = function(partial) {
+
+        var $t            = $(this),
+            $w            = $(window),
+            viewTop       = $w.scrollTop(),
+            viewBottom    = viewTop + $w.height(),
+            _top          = $t.offset().top,
+            _bottom       = _top + $t.height(),
+            compareTop    = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom;
+
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+    };
 
     /* ======================================================= *
-     ...........................NAVBAR...........................
+     ...........................SCROLL...........................
      ==========================================================*/
 
     $(window).scroll(function() {
         var $header = $(".header");
+        var $logo = $(".logo");
         if ($header.offset().top > 50) {
             $header.addClass("scrolled");
+            $logo.addClass("scrolled");
+
         } else {
             $header.removeClass("scrolled");
+            $logo.removeClass("scrolled");
         }
         var set = false;
         var top = $header.offset().top;
@@ -34,8 +55,19 @@ $(document).ready(function(){
                 $("li:nth-child(1)").addClass('current');
             }
         }
-    });
 
+        $(".module:not(.already-visible)").each(function(i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+                el.addClass("come-in");
+                el.addClass('already-visible');
+            }
+        });
+
+    });
+    /* ======================================================= *
+     ...........................LINKS...........................
+     ==========================================================*/
     $(document).on('click', 'a.page-scroll', function(event) {
 
         var $anchor = $(this);
@@ -49,9 +81,13 @@ $(document).ready(function(){
         if($(window).width()<768){
             $( ".checkbox-toggle" ).trigger( "click" );
         }
-
-
     });
+    $(document).on('click', '.logo__logo', function(event) {
+        $('html, body').stop().animate({
+            scrollTop: 0,
+        }, 1500);
+    });
+
 
     /* ======================================================= *
      ...........................PRICING...........................

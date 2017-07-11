@@ -43,7 +43,7 @@
   }
   .page-scroll {
     backface-visibility: hidden;
-    color: #e6e6e6;
+    color: #e6e6e6 !important;
     display: block;
     padding: 0.5em 1em;
     position: relative;
@@ -133,11 +133,15 @@
 }
 
 .logo{
+  cursor: pointer;
+  opacity:0;
   z-index: 10001;
   position:fixed;
   top:10px;
   left:20px;
   color:white;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
   &__logo{
     display:inline-block;
     text-transform: uppercase;
@@ -154,5 +158,8 @@
     display:inline-block;
     top:-3px;
 
+  }
+  &.scrolled{
+    opacity:1;
   }
 }
