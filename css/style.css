@@ -58,6 +58,10 @@
     @media (max-width: 350px) {
       .details__photo {
         top: 380px; } }
+    @media (max-width: 1300px) {
+      .details__photo img {
+        width: 642.6px;
+        height: 343.8px; } }
     @media (max-width: 1200px) {
       .details__photo img {
         width: 571.2px;
@@ -681,6 +685,7 @@
     height: 60px; }
 
 .menu-lg {
+  padding-right: 5px;
   margin-top: 5px;
   font-family: 'Roboto', Arial, sans-serif;
   text-align: right;
