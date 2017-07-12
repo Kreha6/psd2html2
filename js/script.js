@@ -1,4 +1,15 @@
 $(document).ready(function(){
+    /* ======================================================= *
+     STOPPING SLIDING IN IF USER RELOADED PAGE IN THE MIDDLE OF THE PAGE
+     ==========================================================*/
+    var winTop = $(window).scrollTop();
+    $(".module").each(function(i, el) {
+        var el = $(el);
+        if (el.offset().top<winTop) {
+            el.addClass('already-visible');
+        }
+    });
+
 
     /* ======================================================= *
      ...........................SLICK SLIDER...........................
@@ -14,29 +25,6 @@ $(document).ready(function(){
         pauseOnFocus:false
 
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /* ======================================================= *
      ...........................SLIDE IN...........................
