@@ -1,55 +1,20 @@
 $handW: 429px;
 $handH: 496px;
+$screenW: 179px;
+$screenH: 315px;
 .template{
   @include no-padding;
-  .phone{
-    position: absolute;
-    bottom:0;
-    left:150px;
-    @media(max-width:1200px){
-      left:100px;
-    }
-    @media(max-width:1050px){
-      left:50px;
-      //width: $handW * 0.79;
-      //height: $handH * 0.79;
-    }
-    @media(max-width:960px){
-      width: $handW * 0.79;
-      height: $handH * 0.79;
-    }
-    @media #{$xs-screen}{
-      left:10%;
-    }
-    @media(max-width:500px){
-      left:5%;
-      width: $handW * 0.7;
-      height: $handH * 0.7;
-    }
-    @media(max-width:340px){
-      left:0;
-      width: $handW * 0.7;
-      height: $handH * 0.7;
-    }
-  }
   position:relative;
   background: $color-white;
   height:700px;
-  @include no-padding;
-  //@media(max-width:1050px){
-  //  height:600px;
-  //}
   @media(max-width:960px){
     height:640px;
   }
   @media #{$xs-screen}{
     height:900px;
   }
-  @media(max-width:500px){
-    height:1000px;
-  }
-  @media(max-width:340px){
-    height:1100px;
+  @media(max-width:350px){
+    height:1050px;
   }
   &__details{
     @include no-padding;
@@ -86,6 +51,77 @@ $handH: 496px;
     {
 
       text-align: center;
+    }
+    &__phone{
+      position: absolute;
+      bottom:0;
+      .phone{
+        position: relative;
+        bottom:0;
+        left:150px;
+        @media(max-width:1200px){
+          left:100px;
+        }
+        @media(max-width:1050px){
+          left:50px;
+          //width: $handW * 0.79;
+          //height: $handH * 0.79;
+        }
+        @media(max-width:960px){
+          width: $handW * 0.79;
+          height: $handH * 0.79;
+        }
+        @media #{$xs-screen}{
+          left:10%;
+        }
+        @media(max-width:500px){
+          left:5%;
+          width: $handW * 0.7;
+          height: $handH * 0.7;
+        }
+        @media(max-width:340px){
+          left:0;
+          width: $handW * 0.7;
+          height: $handH * 0.7;
+        }
+
+      }
+      .screen{
+        position:absolute;
+        width: $screenW;
+        height: $screenH;
+        bottom:25%;
+        left:330px;
+        @media(max-width:1200px){
+          left:280px;
+        }
+        @media(max-width:1050px){
+          left:230px;
+        }
+        @media(max-width:960px){
+          width: $screenW * 0.79;
+          height: $screenH * 0.79;
+          left:187px;
+        }
+        @media #{$xs-screen}{
+          left:50%;
+        }
+        @media(max-width:500px){
+          left:45%;
+          width: $screenW * 0.7;
+          height: $screenH * 0.7;
+        }
+        @media(max-width:340px){
+          left:40%;
+        }
+        div{
+          height:100%;
+          width:100%;
+          img{
+            position:absolute;
+          }
+        }
+      }
     }
   }
 }

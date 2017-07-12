@@ -489,47 +489,16 @@
   padding: 0 0 0 0;
   position: relative;
   background: #eef1ec;
-  height: 700px;
-  padding: 0 0 0 0; }
-  .template .phone {
-    position: absolute;
-    bottom: 0;
-    left: 150px; }
-    @media (max-width: 1200px) {
-      .template .phone {
-        left: 100px; } }
-    @media (max-width: 1050px) {
-      .template .phone {
-        left: 50px; } }
-    @media (max-width: 960px) {
-      .template .phone {
-        width: 338.91px;
-        height: 391.84px; } }
-    @media only screen and (max-width: 768px) {
-      .template .phone {
-        left: 10%; } }
-    @media (max-width: 500px) {
-      .template .phone {
-        left: 5%;
-        width: 300.3px;
-        height: 347.2px; } }
-    @media (max-width: 340px) {
-      .template .phone {
-        left: 0;
-        width: 300.3px;
-        height: 347.2px; } }
+  height: 700px; }
   @media (max-width: 960px) {
     .template {
       height: 640px; } }
   @media only screen and (max-width: 768px) {
     .template {
       height: 900px; } }
-  @media (max-width: 500px) {
+  @media (max-width: 350px) {
     .template {
-      height: 1000px; } }
-  @media (max-width: 340px) {
-    .template {
-      height: 1100px; } }
+      height: 1050px; } }
   .template__details {
     padding: 0 0 0 0;
     position: absolute;
@@ -558,6 +527,69 @@
     @media only screen and (max-width: 768px) {
       .template__details {
         text-align: center; } }
+    .template__details__phone {
+      position: absolute;
+      bottom: 0; }
+      .template__details__phone .phone {
+        position: relative;
+        bottom: 0;
+        left: 150px; }
+        @media (max-width: 1200px) {
+          .template__details__phone .phone {
+            left: 100px; } }
+        @media (max-width: 1050px) {
+          .template__details__phone .phone {
+            left: 50px; } }
+        @media (max-width: 960px) {
+          .template__details__phone .phone {
+            width: 338.91px;
+            height: 391.84px; } }
+        @media only screen and (max-width: 768px) {
+          .template__details__phone .phone {
+            left: 10%; } }
+        @media (max-width: 500px) {
+          .template__details__phone .phone {
+            left: 5%;
+            width: 300.3px;
+            height: 347.2px; } }
+        @media (max-width: 340px) {
+          .template__details__phone .phone {
+            left: 0;
+            width: 300.3px;
+            height: 347.2px; } }
+      .template__details__phone .screen {
+        position: absolute;
+        width: 179px;
+        height: 315px;
+        bottom: 25%;
+        left: 330px; }
+        @media (max-width: 1200px) {
+          .template__details__phone .screen {
+            left: 280px; } }
+        @media (max-width: 1050px) {
+          .template__details__phone .screen {
+            left: 230px; } }
+        @media (max-width: 960px) {
+          .template__details__phone .screen {
+            width: 141.41px;
+            height: 248.85px;
+            left: 187px; } }
+        @media only screen and (max-width: 768px) {
+          .template__details__phone .screen {
+            left: 50%; } }
+        @media (max-width: 500px) {
+          .template__details__phone .screen {
+            left: 45%;
+            width: 125.3px;
+            height: 220.5px; } }
+        @media (max-width: 340px) {
+          .template__details__phone .screen {
+            left: 40%; } }
+        .template__details__phone .screen div {
+          height: 100%;
+          width: 100%; }
+          .template__details__phone .screen div img {
+            position: absolute; }
 
 .testimonial__info {
   position: relative;
